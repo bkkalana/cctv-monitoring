@@ -33,16 +33,20 @@ A complete offline CCTV monitoring system with face detection and recognition.
 
 3. Create and configure .env file
 4. Run migrations and seeders:
+    ```bash
     php artisan migrate --seed
 5. Start development server:
+    ```bash
     php artisan serve
 
 ### Python Service
 1. Install Python 3.10+
 2. Install dependencies:
+    ```bash
     pip install -r requirements.txt
 3. Configure .env file
 4. Start the service:
+    ```bash
     python main.py
 
 ### Production Setup
