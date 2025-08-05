@@ -191,10 +191,6 @@
 @push('scripts')
     <script>
         // Refresh camera streams every 5 seconds
-        setInterval(() => {
-            document.querySelectorAll('img[src^="{{ route('python.stream') }}"]').forEach(img => {
-                img.src = img.src.split('?')[0] + '?t=' + new Date().getTime();
-            });
-        }, 5000);
+
     </script>
 @endpush

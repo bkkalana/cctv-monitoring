@@ -9,26 +9,7 @@
 @endsection
 
 @section('content')
-    <div class="mb-4 flex justify-between items-center">
-        <div class="flex items-center space-x-4">
-            <input type="text" placeholder="Search videos..." class="border rounded px-3 py-2 w-64">
 
-            <select class="border rounded px-3 py-2">
-                <option>All Types</option>
-                <option>Scheduled</option>
-                <option>Alert Triggered</option>
-            </select>
-
-            <select class="border rounded px-3 py-2">
-                <option>All Cameras</option>
-                @foreach($cameras as $camera)
-                    <option value="{{ $camera->id }}">{{ $camera->name }}</option>
-                @endforeach
-            </select>
-
-            <input type="date" class="border rounded px-3 py-2">
-        </div>
-    </div>
 
     <div class="bg-white shadow-sm sm:rounded-lg overflow-hidden">
         <table class="min-w-full divide-y divide-gray-200">

@@ -123,4 +123,6 @@ return [
         'store' => env('APP_MAINTENANCE_STORE', 'database'),
     ],
 
+    'python_service_url' => env('PYTHON_SERVICE_URL', 'http://localhost:5000'),
+
 ];

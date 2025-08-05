@@ -1,9 +1,11 @@
 <?php
+
+use Illuminate\Http\Request;
 use App\Http\Controllers\AlertController;
 use App\Http\Controllers\VideoController;
 use Illuminate\Support\Facades\Route;
 
-Route::middleware('auth:sanctum')->group(function () {
+Route::group([],function () {
     // API for Python service to create alerts
     Route::post('/alerts', [AlertController::class, 'storeFromPython']);
 

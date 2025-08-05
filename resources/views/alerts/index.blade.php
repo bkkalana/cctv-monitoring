@@ -10,22 +10,6 @@
 
 @section('content')
     <div class="mb-4 flex justify-between items-center">
-        <div class="flex items-center space-x-4">
-            <input type="text" placeholder="Search alerts..." class="border rounded px-3 py-2 w-64">
-
-            <select class="border rounded px-3 py-2">
-                <option>All Types</option>
-                <option>Unknown Faces</option>
-                <option>Recognized Faces</option>
-            </select>
-
-            <select class="border rounded px-3 py-2">
-                <option>All Cameras</option>
-                @foreach($cameras as $camera)
-                    <option value="{{ $camera->id }}">{{ $camera->name }}</option>
-                @endforeach
-            </select>
-        </div>
 
         <div>
             <button class="bg-gray-100 hover:bg-gray-200 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
